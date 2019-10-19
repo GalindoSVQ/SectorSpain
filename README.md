@@ -1,29 +1,26 @@
-# DJANGO VAGRANT
+# PROYECTO ALBARREGAS
 
-## Dependencies
+## Dependencias
 
- * VirtualBox  (https://www.virtualbox.org/wiki/Downloads)
- * Vagrant (https://www.vagrantup.com/downloads.html
- 
- ## Installation
+- VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+- Vagrant (https://www.vagrantup.com/downloads.html
 
-    $ git clone https://github.com/z1digitalstudio/django-vagrant
-    $ cd django-vagrant
-    $ vagrant up --provision
- 
- ## Development
- ### Create user
-     $ vagrant ssh
-     $ python manage.py createsuperuser
- ### Create database tables
-     $ python manage.py migrate
- ### Start up 
-    $ ./run.sh
+## Instalación (primera vez)
+
+    $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
+    $ vagrant up
+    $ vagrant ssh
+    $ python manage.py migrate
+
+### Start up
+
+    $ vagrant up
+    $ vagrant ssh
+    $ python manage.py runserver 0.0.0.0:8000
 
 ## Access from the browser
 
- * http://localhost:8002/
-
+- http://localhost:8002/
 
 ## How to configure
 
@@ -43,10 +40,10 @@ using the `.env` file is ok to quickly test things.
 
 These are the variables used:
 
-| Variable | Default | What | Example |
-| -------- | ------- | ---- | ------- |
-| `ALLOWED_HOSTS` | | A colon separated list with the allowed hosts | `localhost:mywebsite.local` |
-| `ENV` | `dev` | The current environment. When `dev`, Django `DEBUG` will be true | `dev`, `staging`, `prod`... |
-| `DJANGO_SECRET_KEY` | | The secret key for Django... | |
-| `DATABASE_USER` | `django` | User to connect to postgres | |
-| `DATABASE_PASS` | `django` | Password to connect to postgres | |
+| Variable            | Default  | What                                                             | Example                     |
+| ------------------- | -------- | ---------------------------------------------------------------- | --------------------------- |
+| `ALLOWED_HOSTS`     |          | A colon separated list with the allowed hosts                    | `localhost:mywebsite.local` |
+| `ENV`               | `dev`    | The current environment. When `dev`, Django `DEBUG` will be true | `dev`, `staging`, `prod`... |
+| `DJANGO_SECRET_KEY` |          | The secret key for Django...                                     |                             |
+| `DATABASE_USER`     | `django` | User to connect to postgres                                      |                             |
+| `DATABASE_PASS`     | `django` | Password to connect to postgres                                  |                             |
