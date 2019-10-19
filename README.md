@@ -18,27 +18,21 @@
     $ vagrant ssh
     $ python manage.py runserver 0.0.0.0:8000
 
-## Access from the browser
+## Accede dede el navegador
 
 - http://localhost:8002/
 
-## How to configure
+## Como configurar
 
-- The base Django project lives in `backend/`
-- The manage file is `backend/manage.py`
-- The main settings file is `backend/settings.py`
+- Proyecto de Django project está en `backend/`
+- El archivo manage es `backend/manage.py`
+- El archivo de configuración principal es `backend/settings.py`
 
 ### Environment variables
 
-The idea is to be able to configure the project using environment variables.
-This allows a more modular aproach. These variables can be set both in the host
-machine or in the `.env` file.
+La idea es poder configurar el proyecto utilizando variables de entorno. Esto permite un enfoque más modular. Estas variables se pueden configurar tanto en la máquina host como en el archivo `.env`.
 
-It's recommended to set the variables in the host machine for **staging and
-production** environments, so they aren't in the source code. For development,
-using the `.env` file is ok to quickly test things.
-
-These are the variables used:
+Éstas son la variables usadas:
 
 | Variable            | Default  | What                                                             | Example                     |
 | ------------------- | -------- | ---------------------------------------------------------------- | --------------------------- |
