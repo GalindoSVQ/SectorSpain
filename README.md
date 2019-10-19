@@ -32,7 +32,7 @@
 
 La idea es poder configurar el proyecto utilizando variables de entorno. Esto permite un enfoque más modular. Estas variables se pueden configurar tanto en la máquina host como en el archivo `.env`.
 
-Éstas son la variables usadas:
+Estas son la variables usadas:
 
 | Variable            | Default  | What                                                             | Example                     |
 | ------------------- | -------- | ---------------------------------------------------------------- | --------------------------- |
