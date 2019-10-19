@@ -10,7 +10,9 @@
     $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
     $ vagrant up
     $ vagrant ssh
+    $ python manage.py createsuperuser
     $ python manage.py migrate
+    
 
 ### Start up
 
