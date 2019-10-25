@@ -3,22 +3,16 @@
 ## Dependencias
 
 - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
-- Vagrant (https://www.vagrantup.com/downloads.html
+- Vagrant (https://www.vagrantup.com/downloads.html)
 
 ## Instalación (primera vez)
 
     $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
     $ vagrant up
     $ vagrant ssh
-    $ python manage.py createsuperuser
-    $ python manage.py migrate
-    
-
-### Start up
-
-    $ vagrant up
-    $ vagrant ssh
-    $ python manage.py runserver 0.0.0.0:8000
+    $ psql -U django-W django_db < sectorspain.sql
+    $ django
+    $ python3 manage.py runserver 0.0.0.0:8000
 
 ## Accede dede el navegador
 
