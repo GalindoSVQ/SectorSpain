@@ -10,7 +10,7 @@
     $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
     $ vagrant up
     $ vagrant ssh
-    $ psql -U django-W django_db < sectorspain.sql
+    $ psql -U django -W django_db < sectorspain.sql
     $ django
     $ python3 manage.py runserver 0.0.0.0:8000
 
