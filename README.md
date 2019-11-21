@@ -10,19 +10,23 @@
     $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
     $ vagrant up
     $ vagrant ssh
-    $ psql -U django -W django_db < sectorspain.sql
+    $ psql -U django -W django_db < basename.sql
     $ django
     $ python3 manage.py runserver 0.0.0.0:8000
 
-## Accede dede el navegador
 
-- http://localhost:8002/
+## Como configurar frontend
+
+    $ cd frontend
+    $ npm install
+    $ npm start
 
 ## Como configurar
 
 - Proyecto de Django project está en `backend/`
 - El archivo manage es `backend/manage.py`
 - El archivo de configuración principal es `backend/settings.py`
+- El frontend se encuentra en 'frontend'
 
 ### Environment variables
 
