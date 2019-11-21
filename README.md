@@ -21,7 +21,7 @@
     $ npm install
     $ npm start
 
-## Como configurar
+## Configuración
 
 - Proyecto de Django project está en `backend/`
 - El archivo manage es `backend/manage.py`
