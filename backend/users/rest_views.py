@@ -14,7 +14,26 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 from users.models import User
 from users.serializers import (UserProfileSerializer, ChangePasswordSerializer,
                                CustomTokenObtainPairView, EmailField,
-                               ResetPasswordSerializer)
+                               ResetPasswordSerializer, UserCreateSerializer)
+
+
+
+class CreateUserView(api_views.CreateAPIView):
+    """Create a new climber"""
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = UserCreateSerializer
+
+    def post(self, request):
+
+        serializer = UserCreateSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        if serializer.is_valid():
+            serializer.save()
+        else:
+            return Response({'response': 'error', 'message': serializer.errors})
+
+        return Response({'response': 'success', 'message': 'Climber created successfully'})
 
 
 class UserListRestView(api_views.ListCreateAPIView):

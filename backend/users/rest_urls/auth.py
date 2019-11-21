@@ -3,7 +3,7 @@ from rest_framework_simplejwt.views import (TokenRefreshView, TokenVerifyView)
 
 from users.rest_views import (CustomTokenObtainPairView,
                               ChangePasswordRestView, ResetPasswordRestView,
-                              ConfirmResetPasswordView)
+                              ConfirmResetPasswordView, CreateUserView)
 
 
 urlpatterns = [
@@ -17,4 +17,5 @@ urlpatterns = [
          name="confirm_password"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("token/verify/", TokenVerifyView.as_view(), name="token_verify"),
+    path("create/", CreateUserView.as_view(),name="create_user"),
 ]
