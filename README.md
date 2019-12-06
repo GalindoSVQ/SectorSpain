@@ -18,9 +18,7 @@
     $ ./run.sh
 
 
-## Arrancar frontend
-
-- Nos situamos en la carpeta 'frontend', instalamos las dependencias y arrancamos el servidor.
+## Arrancar frontend (nos situamos en la carpeta 'frontend', instalamos las dependencias y arrancamos el servidor)
 
     $ npm install
     $ npm start
