@@ -5,19 +5,23 @@
 - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
 - Vagrant (https://www.vagrantup.com/downloads.html)
 
-## Instalación (primera vez)
+## Primera instalación y arrancar backend
 
-    $ git clone https://github.com/galindosvq/ProyectoAlbarregas.git
+    $ git clone https://github.com/galindosvq/SectorSpain.git
+    $ cd ProyectoAlbarregas/
+    $ cp .env.default .env
     $ vagrant up
     $ vagrant ssh
+    $ pip install -r requeriments.txt
     $ psql -U django -W django_db < basename.sql
     $ django
-    $ python3 manage.py runserver 0.0.0.0:8000
+    $ ./run.sh
 
 
-## Como configurar frontend
+## Arrancar frontend
 
-    $ cd frontend
+- Nos situamos en la carpeta 'frontend', instalamos las dependencias y arrancamos el servidor.
+
     $ npm install
     $ npm start
 
