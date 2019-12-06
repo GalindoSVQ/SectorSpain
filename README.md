@@ -10,6 +10,7 @@
     $ git clone https://github.com/galindosvq/SectorSpain.git
     $ cd SectorSpain/
     $ cp .env.default .env
+    $ cp frontend/.env.default frontend/.env
     $ vagrant up
     $ vagrant ssh
     $ pip install -r requeriments.txt
