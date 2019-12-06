@@ -8,7 +8,7 @@
 ## Primera instalación y arrancar backend
 
     $ git clone https://github.com/galindosvq/SectorSpain.git
-    $ cd ProyectoAlbarregas/
+    $ cd SectorSpain/
     $ cp .env.default .env
     $ vagrant up
     $ vagrant ssh
