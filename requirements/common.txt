@@ -3,7 +3,7 @@
 Django==2.2.13
 django-su==0.8.0
 django-filter==2.1.0
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.3.0
 python-dotenv==0.10.3
 # posgres
