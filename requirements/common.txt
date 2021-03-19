@@ -1,6 +1,6 @@
 
 # django
-Django==2.2.13
+Django==2.2.18
 django-su==0.8.0
 django-filter==2.1.0
 djangorestframework==3.11.2
